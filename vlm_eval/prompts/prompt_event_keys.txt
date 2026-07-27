@@ -1,0 +1,41 @@
+目的：
+現在の映像から、該当するイベントキーのみを抽出する。
+
+使用可能なイベントキー：
+road_depression
+fallen_object
+road_work
+traffic_jam
+accident
+blind_spot
+pedestrian_attention
+intersection_complexity
+none
+
+各イベントキーの意味：
+road_depression = 陥没 / 穴 / 路面損傷 / 路面の穴 / 道路陥没
+fallen_object = 落下物 / 障害物 / 路上障害物 / 散乱物 / 荷物
+road_work = 工事 / 工事中 / 車線規制 / 規制 / コーン / ポール
+traffic_jam = 渋滞 / 混雑 / 車列 / 停滞 / 流れが悪い
+accident = 事故 / 接触 / 追突 / 衝突事故 / 故障車
+blind_spot = 死角 / 見通しが悪い / 見えにくい / 陰 / 遮られて / 遮蔽
+pedestrian_attention = 歩行者 / 横断 / 飛び出し / 自転車 / 二輪
+intersection_complexity = 交差点 / 合流 / 分岐 / 右左折 / 信号
+
+判定ルール：
+- 映像に該当するものだけを選ぶこと
+- 該当がなければ none を返すこと
+- 必ず上記キーだけを使うこと
+- 説明文は禁止
+- 日本語禁止
+- 句読点禁止
+- 出力は1行のみ
+- 最大2件まで
+- 重要度が高いものを優先すること
+
+出力形式：
+event_name1,event_name2
+
+例：
+road_work,traffic_jam
+none

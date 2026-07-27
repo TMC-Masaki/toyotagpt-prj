@@ -1,0 +1,91 @@
+file,test_id,complexity,model_key,submit_count,result_count,avg_latency_ms,min_latency_ms,max_latency_ms,first_video_sec,last_video_sec,first_payload,last_payload
+20260330_121447_test2_mid_mid_llava15_7b.log,test2_mid,mid,llava15_7b,3,3,49606.0,20093,85973,0.434,111.712,"検出Event：traffic_jam, blind_spot 要約：車線規制があるため、見通しが[eval]","検出Event：traffic_jam, road_work 要約：車線規制や工事が行われているため"
+20260330_121752_test2_mid_mid_llava15_13b.log,test2_mid,mid,llava15_13b,2,2,73616.5,43842,103391,125.425,86.019,"検出Event： road_depression, fallen_object 要約： 路面の穴や落下物が検出さ",検出Event： road_depression 要約： 道路の陥没がある。
+20260330_122054_test2_mid_mid_llava_ov_05b.log,test2_mid,mid,llava_ov_05b,21,0,,,,,,,
+20260330_122422_test2_mid_mid_llava_ov_7b.log,test2_mid,mid,llava_ov_7b,18,0,,,,,,,
+20260330_122746_test2_mid_mid_qwen2vl_2b.log,test2_mid,mid,qwen2vl_2b,4,4,34216.0,25049,53340,125.325,102.436,"検出Event：road_depression, fallen_object 要約：道路陥没、落下物","検出Event：road_depression, fallen_object 要約：道路陥没、落下物"
+20260330_123052_test2_mid_mid_qwen2vl_7b.log,test2_mid,mid,qwen2vl_7b,6,6,33955.3,4265,68448,125.292,54.588,検出Event： none 要約： 特記すべき共有イベントなし,検出Event： none 要約： 特記すべき共有イベントなし
+20260330_123516_test2_mid_mid_qwen25_3b.log,test2_mid,mid,qwen25_3b,3,3,50545.3,24100,72750,56.39,108.442,検出Event： none 要約： 特記すべき共有イベントなし,"検出Event： road_depression, fallen_object 要約： 道路に陥没や散乱物が存在している可能性があります。"
+20260330_123824_test2_mid_mid_qwen25_7b.log,test2_mid,mid,qwen25_7b,4,4,36295.2,15364,64124,125.559,114.881,検出Event： none 要約： 特記すべき共有イベントなし,検出Event： road_depression 要約： 路面に小さな穴が見える。
+20260330_124134_test2_mid_mid_smolvlm.log,test2_mid,mid,smolvlm,5,5,26329.0,12018,55473,0.367,111.912,検出Event： none 要素： none 要素の要素： none,検出Event： none 要素： none
+20260330_124442_test2_high_high_llava15_7b.log,test2_high,high,llava15_7b,3,3,49757.7,18408,83059,125.559,112.946,"検出Event：traffic_jam, blind\_spot, pedestrian\_attention, intersection\_complexity 要約：車線規制","検出Event：traffic_jam, blind_spot, pedestrian_attention 要約：車が渋滞してい"
+20260330_124747_test2_high_high_llava15_13b.log,test2_high,high,llava15_13b,2,2,78291.5,48205,108378,125.225,88.855,"検出Event： road_depression, fallen_object 要約： 道路上の障害物が検出され",検出Event： road_depression 要約： 道路上に穴があり、車が通行する際に注
+20260330_125053_test2_high_high_llava_ov_05b.log,test2_high,high,llava_ov_05b,20,0,,,,,,,
+20260330_125419_test2_high_high_llava_ov_7b.log,test2_high,high,llava_ov_7b,18,0,,,,,,,
+20260330_125738_test2_high_high_qwen2vl_2b.log,test2_high,high,qwen2vl_2b,3,3,50811.7,16229,84231,125.559,116.016,"検出Event：road_depression, fallen_object, traffic_jam 要約：道路陥没、落下物、渋滞 検出Event：none 要約","検出Event：road_depression, fallen_object, traffic_jam 要約：道路陥没、落下物、渋滞 検出Event：none 要約"
+20260330_130048_test2_high_high_qwen2vl_7b.log,test2_high,high,qwen2vl_7b,4,4,35692.5,21251,66825,0.567,108.642,検出Event： none 要約： 特記すべき共有イベントなし,検出Event： none 要約： 特記すべき共有イベントなし
+20260330_130356_test2_high_high_qwen25_3b.log,test2_high,high,qwen25_3b,3,3,47659.7,29043,74307,0.167,98.065,検出Event： none 要約： 特記すべき共有イベントなし,検出Event： none 要約： 特記すべき共有イベントなし
+20260330_130702_test2_high_high_qwen25_7b.log,test2_high,high,qwen25_7b,3,3,50474.7,33988,76422,125.192,100.5,検出Event： road_depression 要約： 路面に異常な凹みが見られます。,"検出Event： road_depression, fallen_object 要約： 路面に穴があり、散乱物が見られます。"
+20260330_131010_test2_high_high_smolvlm.log,test2_high,high,smolvlm,6,6,21355.7,3101,57803,0.667,124.358,検出Event： none 要素： none 要素の要素： none,none.
+20260330_131320_test4_mid_mid_llava15_7b.log,test4_mid,mid,llava15_7b,2,2,70597.5,33908,107287,125.559,31.398,"検出Event：traffic_jam, blind\_spot, pedestrian\_attention, intersection\_complexity 要約：車線規制","検出Event：traffic_jam, blind_spot 要約： 車線規制があるため、見通しが"
+20260330_131610_test4_mid_mid_llava15_13b.log,test4_mid,mid,llava15_13b,1,1,75687.0,75687,75687,0.267,0.267,検出Event： road_depression 要約： 道路の陥没がある。,検出Event： road_depression 要約： 道路の陥没がある。
+20260330_131747_test4_mid_mid_llava_ov_05b.log,test4_mid,mid,llava_ov_05b,8,0,,,,,,,
+20260330_131931_test4_mid_mid_llava_ov_7b.log,test4_mid,mid,llava_ov_7b,6,0,,,,,,,
+20260330_132113_test4_mid_mid_qwen2vl_2b.log,test4_mid,mid,qwen2vl_2b,4,4,31604.8,12468,59738,55.956,48.048,"検出Event：road_depression, fallen_object 要約：道路陥没、落下物","検出Event：road_depression, fallen_object 要約：道路陥没、落下物"
+20260330_132405_test4_mid_mid_qwen2vl_7b.log,test4_mid,mid,qwen2vl_7b,2,2,35977.0,3867,68087,0.2,55.322,検出Event： none 要約： 特記すべき共有イベントなし,検出Event： traffic_jam 要約： 車が混雑し、流れが悪い。
+20260330_132546_test4_mid_mid_qwen25_3b.log,test4_mid,mid,qwen25_3b,1,1,75949.0,75949,75949,55.656,55.656,"検出Event： road_depression, fallen_object 要約： 道路に陥没や散乱物が存在している可能性があります。","検出Event： road_depression, fallen_object 要約： 道路に陥没や散乱物が存在している可能性があります。"
+20260330_132723_test4_mid_mid_qwen25_7b.log,test4_mid,mid,qwen25_7b,1,1,71927.0,71927,71927,0.534,0.534,検出Event： road_depression 要約： 路面に小さな穴が見える。,検出Event： road_depression 要約： 路面に小さな穴が見える。
+20260330_132900_test4_mid_mid_smolvlm.log,test4_mid,mid,smolvlm,3,3,20109.3,5328,39609,55.923,53.053,検出Event： none 要素： none,検出Event： none 要素： none
+20260330_133037_test4_high_high_llava15_7b.log,test4_high,high,llava15_7b,1,1,74118.0,74118,74118,0.167,0.167,"検出Event：traffic_jam, blind_spot, pedestrian_attention 要約：車線規制や見通しの","検出Event：traffic_jam, blind_spot, pedestrian_attention 要約：車線規制や見通しの"
+20260330_133213_test4_high_high_llava15_13b.log,test4_high,high,llava15_13b,1,1,78498.0,78498,78498,0.4,0.4,"検出Event： road_depression, fallen_object 要約： 道路上に穴がある、または落下","検出Event： road_depression, fallen_object 要約： 道路上に穴がある、または落下"
+20260330_133353_test4_high_high_llava_ov_05b.log,test4_high,high,llava_ov_05b,8,0,,,,,,,
+20260330_133538_test4_high_high_llava_ov_7b.log,test4_high,high,llava_ov_7b,6,0,,,,,,,
+20260330_133721_test4_high_high_qwen2vl_2b.log,test4_high,high,qwen2vl_2b,1,1,73851.0,73851,73851,0.0,0.0,"検出Event：road_depression, fallen_object, traffic_jam 要約：道路陥没、落下物、渋滞 検出Event：none 要約","検出Event：road_depression, fallen_object, traffic_jam 要約：道路陥没、落下物、渋滞 検出Event：none 要約"
+20260330_133856_test4_high_high_qwen2vl_7b.log,test4_high,high,qwen2vl_7b,1,1,74851.0,74851,74851,0.167,0.167,検出Event： traffic_jam 要約： 進行方向がDで、渋滞が見られる可能性があります。,検出Event： traffic_jam 要約： 進行方向がDで、渋滞が見られる可能性があります。
+20260330_134033_test4_high_high_qwen25_3b.log,test4_high,high,qwen25_3b,2,2,34921.0,7333,62509,0.234,52.019,検出Event： none 要約： 特記すべき共有イベントなし,検出Event： none 要約： 特記すべき共有イベントなし
+20260330_134212_test4_high_high_qwen25_7b.log,test4_high,high,qwen25_7b,1,1,75545.0,75545,75545,0.1,0.1,検出Event： road_work 要約： 左側に工事のコーンが見えます。,検出Event： road_work 要約： 左側に工事のコーンが見えます。
+20260330_134349_test4_high_high_smolvlm.log,test4_high,high,smolvlm,2,2,34799.5,4664,64935,55.956,55.055,検出Event： none 要素： - 45 km/h - D - 0〜3 件選ぶこ,検出Event： none 要約： 特記すべき共有イベントなし.
+20260330_134528_test6_mid_mid_llava15_7b.log,test6_mid,mid,llava15_7b,5,5,41619.2,6333,75943,55.556,180.914,"検出Event：traffic_jam, blind_spot 要約：車線規制があるため、遮蔽","検出Event：traffic_jam, blind_spot 要約：車線規制が悪いために"
+20260330_134949_test6_mid_mid_llava15_13b.log,test6_mid,mid,llava15_13b,3,3,76498.0,37596,121584,182.015,160.06,"検出Event： traffic\_jam, road\_work 要約： 渋滞と工事が混在している","検出Event： road_depression, traffic_jam 要約： 道路の損傷や渋滞が"
+20260330_135417_test6_mid_mid_llava_ov_05b.log,test6_mid,mid,llava_ov_05b,27,0,,,,,,,
+20260330_135840_test6_mid_mid_llava_ov_7b.log,test6_mid,mid,llava_ov_7b,25,0,,,,,,,
+20260330_140302_test6_mid_mid_qwen2vl_2b.log,test6_mid,mid,qwen2vl_2b,6,6,33049.2,26384,54225,163.497,160.56,"検出Event：road_depression, fallen_object 要約：道路陥没、落下物","検出Event：road_depression, fallen_object 要約：道路陥没、落下物"
+20260330_140723_test6_mid_mid_qwen2vl_7b.log,test6_mid,mid,qwen2vl_7b,5,5,41800.4,30247,77589,181.982,156.723,検出Event： traffic_jam 要約： 夜間の高速道路で渋滞が発生しています。[video_src] read_ok read_ms=22.5 pos_sec=80.247 shape=1080x1082x3,検出Event： traffic_jam 要約： 前方には車列が見え、渋滞の可能性があります。
+20260330_141145_test6_mid_mid_qwen25_3b.log,test6_mid,mid,qwen25_3b,4,4,53961.0,31119,89778,0.067,158.792,"検出Event： road_depression, fallen_object 要約： 路面上に穴や障害物がある可能性があります。",検出Event： traffic_jam 要約： 道路が混雑しているため、進行速度が遅い。
+20260330_141607_test6_mid_mid_qwen25_7b.log,test6_mid,mid,qwen25_7b,5,5,42021.4,9610,88582,0.2,175.275,検出Event： road_depression 要約： 路面に明確な陥没や損傷は確認できませんでした。,検出Event： road_work 要約： 左側に工事用のコーンが設置されている。
+20260330_142031_test6_mid_mid_smolvlm.log,test6_mid,mid,smolvlm,10,10,16837.5,5797,41991,181.181,169.87,検出Event： none 要素： none[video_src] read_ok read_ms=25.6 pos_sec=31.932 shape=1080x1082x3,検出Event： none 要素： none
+20260330_142453_test6_high_high_llava15_7b.log,test6_high,high,llava15_7b,4,4,52810.2,33561,82020,179.98,155.889,"検出Event：traffic_jam, blind_spot, pedestrian_attention 要約：車線規制や見通しの","検出Event：traffic_jam, blind_spot, pedestrian_attention 要約：車線規制や見通しの"
+20260330_142910_test6_high_high_llava15_13b.log,test6_high,high,llava15_13b,3,3,73053.7,54172,106493,181.581,139.506,"検出Event： road_depression, traffic_jam 要約： 道路の損傷や渋滞が","検出Event：road\_depression, traffic\_jam 要約： 陥没と渋滞が検出さ"
+20260330_143329_test6_high_high_llava_ov_05b.log,test6_high,high,llava_ov_05b,27,0,,,,,,,
+20260330_143751_test6_high_high_llava_ov_7b.log,test6_high,high,llava_ov_7b,25,0,,,,,,,
+20260330_144213_test6_high_high_qwen2vl_2b.log,test6_high,high,qwen2vl_2b,4,4,53635.5,39148,78746,161.361,148.882,"検出Event：road_depression, fallen_object, traffic_jam 要約：道路陥没、落下物、渋滞 検出Event：none 要約","検出Event：road_depression, fallen_object, traffic_jam 要約：道路陥没、落下物、渋滞 検出Event：none 要約"
+20260330_144633_test6_high_high_qwen2vl_7b.log,test6_high,high,qwen2vl_7b,5,5,42085.0,10115,82756,0.267,176.143,検出Event： traffic_jam 要約： 夜間の道路で渋滞が発生しています。[video_src] read_ok read_ms=35.2 pos_sec=85.152 shape=1080x1082x3,検出Event： traffic_jam 要約： 夜間の道路で渋滞が発生しています。
+20260330_145058_test6_high_high_qwen25_3b.log,test6_high,high,qwen25_3b,6,6,33895.7,4504,67941,182.015,180.547,検出Event： none 要約： 特記すべき共有イベントなし,検出Event： none 要約： 特記すべき共有イベントなし
+20260330_145523_test6_high_high_qwen25_7b.log,test6_high,high,qwen25_7b,5,5,42324.0,6759,87753,0.167,179.079,検出Event： road_work 要約： 左側に工事用のコーンが見えます。,検出Event： road_work 要約： 左側に工事のコーンが見えます。
+20260330_145949_test6_high_high_smolvlm.log,test6_high,high,smolvlm,8,8,22980.0,4676,43016,182.015,154.221,検出Event： none 要素： none[video_src] read_ok read_ms=37.2 pos_sec=32.432 shape=1080x1082x3,検出Event： none 要約： 特記すべき共有イベントなし
+20260330_175039_test5_low_low_llava15_7b.log,test5_low,low,llava15_7b,2,2,53791.0,5423,102159,0.0,87.421,今見えている危険要素または注意点：車両が交通量の中で移動している。,危険要素は見当たらない。
+20260330_175647_test5_low_low_llava15_13b.log,test5_low,low,llava15_13b,2,2,56470.5,22696,90245,90.624,76.843,検出Event： 人が車を横切る 要約： 人が車を横切ることで、交通事,検出Event： 車両が混雑している 要約： 多くの車が
+20260330_175911_test5_low_low_llava_ov_05b.log,test5_low,low,llava_ov_05b,14,0,,,,,,,
+20260330_180145_test5_low_low_llava_ov_7b.log,test5_low,low,llava_ov_7b,26,0,,,,,,,
+20260330_180607_test5_low_low_qwen2vl_2b.log,test5_low,low,qwen2vl_2b,4,4,24137.5,11075,46827,74.441,83.383,検出Event： free 要約： 60文字以内で1文,検出Event： free 要約： 60文字以内で1文
+20260330_180831_test5_low_low_qwen2vl_7b.log,test5_low,low,qwen2vl_7b,3,3,34594.0,21458,60777,0.3,73.674,"""電線が道路に近接しており、注意が必要です。""","""電線が近くに張られているため、高所作業や電線に触れると危険です。"""
+20260330_181053_test5_low_low_qwen25_3b.log,test5_low,low,qwen25_3b,2,2,55975.5,23500,88451,90.557,74.374,検出Event： 道路の交差点に車両が停車している 要約： 車両が交差点に停車しているため、通行が,検出Event： 駐車場の車両が接近している 要約： 車両が接近し、駐車場内での事故リスクがある。
+20260330_181316_test5_low_low_qwen25_7b.log,test5_low,low,qwen25_7b,2,2,55006.0,30356,79656,0.0,66.199,検出Event： free 要約： 道路幅が狭く、対向車との接近に注意が必要です。[video_src] read_ok read_ms=54.3 pos_sec=60.894 shape=1080x1094x3,検出Event：駐車場混雑 要約：駐車場が混雑しており、運転時注意が必要です。
+20260330_181537_test5_low_low_smolvlm.log,test5_low,low,smolvlm,3,3,33744.3,20977,45688,90.29,74.308,一人の男性が道路の中央に歩く。,シーンの中で、次のような危険要素があります。
+20260330_181756_test5_mid_mid_llava15_7b.log,test5_mid,mid,llava15_7b,4,4,53715.0,43066,84692,90.424,59.96,"検出Event：traffic_jam, blind_spot 要約：車列や見通しが悪い状況が見ら","検出Event：traffic_jam, blind_spot 要約：車線規制が行われているため、"
+20260330_182220_test5_mid_mid_llava15_13b.log,test5_mid,mid,llava15_13b,4,4,54941.8,17328,113475,4.104,82.983,検出Event： road_depression 要約： 道路上に穴があり、車が通行する際に注,検出Event： road_depression 要約： 道路上に穴があり、車が通行する際に注
+20260330_182646_test5_mid_mid_llava_ov_05b.log,test5_mid,mid,llava_ov_05b,14,0,,,,,,,
+20260330_182924_test5_mid_mid_llava_ov_7b.log,test5_mid,mid,llava_ov_7b,12,0,,,,,,,
+20260330_183159_test5_mid_mid_qwen2vl_2b.log,test5_mid,mid,qwen2vl_2b,3,3,34984.0,22635,52360,90.591,74.408,"検出Event：road_depression, fallen_object 要約：道路陥没、落下物","検出Event：road_depression, fallen_object 要約：道路陥没、落下物 検出Event：none 要約：特記すべき共有イベントなし"
+20260330_183422_test5_mid_mid_qwen2vl_7b.log,test5_mid,mid,qwen2vl_7b,3,3,35987.0,7151,71729,90.624,87.654,検出Event： traffic_jam 要約： 車が混雑し、流れが悪い。,検出Event： traffic_jam 要約： 車が混雑し、流れが悪い。
+20260330_183649_test5_mid_mid_qwen25_3b.log,test5_mid,mid,qwen25_3b,2,2,55674.0,21339,90009,0.2,73.907,"検出Event： road_depression, fallen_object 要約： 道路に陥没や散乱物が存在している可能性があります。",検出Event： none 要約： 特記すべき共有イベントなし
+20260330_183911_test5_mid_mid_qwen25_7b.log,test5_mid,mid,qwen25_7b,3,3,35030.0,9123,69311,90.624,84.985,検出Event： road_work 要約： 左側の道路に工事が行われている様子。,検出Event： road_work 要約： 左側に工事用のコーンが設置されている。
+20260330_184135_test5_mid_mid_smolvlm.log,test5_mid,mid,smolvlm,5,5,16139.6,9063,27023,0.4,75.175,検出Event： none 要素： none,検出Event： none 要素： none
+20260330_185321_test7_mid_mid_llava15_7b.log,test7_mid,mid,llava15_7b,7,7,27796.3,14603,56035,90.49,33.283,"検出Event：traffic_jam, blind_spot 要約：車列や見通しが悪い状況が見ら","検出Event：traffic_jam, blind_spot 要約：車線規制が行われているため、"
+20260330_185747_test7_mid_mid_llava15_13b.log,test7_mid,mid,llava15_13b,4,4,41642.8,26680,70323,43.961,135.385,検出Event： road_depression 要約： 道路の陥没がある。[video_src] read_ok read_ms=24.0 pos_sec=58.141 shape=1080x1062x3,"検出Event： traffic\_jam, road\_work 要約： 渋滞と工事が検出されまし"
+20260330_190121_test7_mid_mid_llava_ov_05b.log,test7_mid,mid,llava_ov_05b,23,0,,,,,,,
+20260330_190512_test7_mid_mid_llava_ov_7b.log,test7_mid,mid,llava_ov_7b,22,0,,,,,,,
+20260330_190902_test7_mid_mid_qwen2vl_2b.log,test7_mid,mid,qwen2vl_2b,8,8,17162.4,8962,36437,155.405,149.274,"検出Event：road_depression, fallen_object 要約：道路陥没、落下物","検出Event：road_depression, fallen_object 要約：道路陥没、落下物"
+20260330_191238_test7_mid_mid_qwen2vl_7b.log,test7_mid,mid,qwen2vl_7b,6,6,24988.0,14601,49001,0.25,138.055,検出Event： none 要約： 特記すべき共有イベントなし[video_src] read_ok read_ms=14.7 pos_sec=38.997 shape=1080x1062x3,検出Event： traffic_jam 要約： 夜間の道路で車が並んでいる渋滞が発生しています。
+20260330_191611_test7_mid_mid_qwen25_3b.log,test7_mid,mid,qwen25_3b,5,5,32190.4,10992,59959,155.405,149.149,"検出Event： traffic_jam, intersection_complexity 要約： 道路が混雑しており、交差点の複雑さが問題となる可能性があります。","検出Event： road_depression, traffic_jam 要約： 道路に陥没や渋滞が発生している可能性があります。"
+20260330_191947_test7_mid_mid_qwen25_7b.log,test7_mid,mid,qwen25_7b,6,6,24589.8,16812,53219,155.447,138.013,検出Event： road_work 要約： 左側に工事用のコーンが設置されています。,検出Event： road_work 要約： 左側に工事用のコーンが設置されている。
+20260330_192321_test7_mid_mid_smolvlm.log,test7_mid,mid,smolvlm,11,11,10010.6,3116,28036,155.447,144.811,検出Event： none 要素： none,検出Event： none 要素： none
+20260330_192659_test7_high_high_llava15_7b.log,test7_high,high,llava15_7b,5,5,31164.0,20579,54029,155.405,138.472,"検出Event：traffic_jam, blind_spot, pedestrian_attention 要約：車線規制や見通しの","検出Event：traffic_jam, blind_spot, pedestrian_attention 要約：車線規制や見通しの"
+20260330_193030_test7_high_high_llava15_13b.log,test7_high,high,llava15_13b,4,4,41235.5,23825,74041,155.405,137.095,"検出Event： road_depression, traffic_jam 要約： 道路の損傷や渋滞が","検出Event： road_depression, traffic_jam 要約： 道路の損傷や渋滞が"
+20260330_193402_test7_high_high_llava_ov_05b.log,test7_high,high,llava_ov_05b,24,0,,,,,,,
+20260330_193755_test7_high_high_llava_ov_7b.log,test7_high,high,llava_ov_7b,22,0,,,,,,,
+20260330_194144_test7_high_high_qwen2vl_2b.log,test7_high,high,qwen2vl_2b,5,5,31679.6,20366,46628,0.417,139.473,"検出Event：road_depression, fallen_object, traffic_jam 要約： 3件の共有イベント候補が検出されました。","検出Event：road_depression, fallen_object, traffic_jam 要約：道路陥没、落下物、渋滞 検出Event：none 要約"
+20260330_194518_test7_high_high_qwen2vl_7b.log,test7_high,high,qwen2vl_7b,7,7,19914.0,12961,45755,0.083,141.85,検出Event： none 要約： 特記すべき共有イベントなし,検出Event： traffic_jam 要約： 進行方向がDで、前方には渋滞が見られる。
+20260330_194851_test7_high_high_qwen25_3b.log,test7_high,high,qwen25_3b,9,9,13535.7,5072,35043,155.447,154.446,検出Event： traffic_jam 要約： 道路が混雑しているため、進行速度が遅い。[video_src] read_ok read_ms=25.6 pos_sec=52.219 shape=1080x1062x3,検出Event： traffic_jam 要約： 道路が混雑しているため、進行方向が不明確です。
+20260330_195221_test7_high_high_qwen25_7b.log,test7_high,high,qwen25_7b,8,8,22418.4,16754,51208,155.447,23.023,検出Event： intersection_complexity 要約： 夜間の信号待ちで注意が必要です。,検出Event： road_work 要約： 左側に工事のコーンが見えます。
+20260330_195647_test7_high_high_smolvlm.log,test7_high,high,smolvlm,10,10,12170.7,3286,51343,41.833,148.273,検出Event： none 要素： none,検出Event： none 要素： none

@@ -1,0 +1,29 @@
+目的：
+現在の映像から、該当するイベントキーのみを抽出する。
+
+使用可能なイベントキー：
+road_depression
+fallen_object
+road_work
+traffic_jam
+accident
+blind_spot
+pedestrian_attention
+intersection_complexity
+none
+
+判定ルール：
+- 映像に該当するものだけを選ぶこと
+- 該当がなければ none を返すこと
+- 必ず上記キーだけを使うこと
+- 説明文は禁止
+- 日本語禁止
+- 句読点禁止
+- 出力は1行のみ
+
+出力形式：
+event_name1,event_name2
+
+例：
+road_work,traffic_jam
+none

@@ -1,0 +1,10 @@
+test_id,video_path,scene_note
+test1,/data/test1.mp4,車の多い高速道路（大井松田付近）
+test2,/data/test2.mp4,見通しの悪い住宅街（自宅付近）
+test3,/data/test3.mp4,歩行者の多いエリア（東海大）
+test4,/data/test4.mp4,右折待ちバスによる死角（秦野駅付近）
+test5,/data/test5.mp4,認知負荷の高い場所（近所のスーパー）
+test6,/data/test6.mp4,夜間工事＆混雑（秦野246）
+test7,/data/test7.mp4,夜間路面陥没（平塚施設駐車場）
+test8,/data/test8.mp4,夜間何もない道（平塚農道）
+test9,/data/test9.mp4,夜間大通り（厚木インター通り）

@@ -1,0 +1,5 @@
+test_id,video_path,scene_name,complexity,prompt_file
+test2,/data/test2.mp4,test2,event,vlm_eval/prompts/prompt_event_keys.txt
+test4,/data/test4.mp4,test4,event,vlm_eval/prompts/prompt_event_keys.txt
+test6,/data/test6.mp4,test6,event,vlm_eval/prompts/prompt_event_keys.txt
+test7,/data/test7.mp4,test7,event,vlm_eval/prompts/prompt_event_keys.txt

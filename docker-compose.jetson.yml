@@ -1,0 +1,66 @@
+services:
+  vlm_platform:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.jetson
+    container_name: vlm_platform
+    runtime: nvidia
+    privileged: true
+    network_mode: host
+    group_add:
+      - video
+    ports:
+      - "8000:8000"
+    volumes:
+      - /tmp/argus_socket:/tmp/argus_socket
+      - /dev:/dev
+      - .:/app:rw
+      - /mnt/vlm_data/data:/data:rw
+      - /mnt/vlm_data/logs:/logs:rw
+      - /mnt/vlm_data/models:/models:rw
+    device_cgroup_rules:
+      - 'c 81:* rmw'
+    environment:
+      TZ: Asia/Tokyo
+      PYTHONPATH: /app
+      HF_HOME: /models/hf
+      HUGGINGFACE_HUB_CACHE: /models/hf/hub
+      TRANSFORMERS_CACHE: /models/hf/transformers
+      GPSD_HOST: "127.0.0.1"
+      GPSD_PORT: "2947"
+      AWS_ACCESS_KEY_ID: "${AWS_ACCESS_KEY_ID:-}"
+      AWS_SECRET_ACCESS_KEY: "${AWS_SECRET_ACCESS_KEY:-}"
+      AWS_SESSION_TOKEN: "${AWS_SESSION_TOKEN:-}"
+      AWS_DEFAULT_REGION: "${AWS_DEFAULT_REGION:-ap-northeast-1}"
+
+    restart: unless-stopped
+    depends_on:
+      - ollama
+    command: >
+      uvicorn app.main:app
+      --host 0.0.0.0
+      --port 8000
+      --log-level info
+
+  ollama:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.ollama_jetson
+      args:
+        OLLAMA_VERSION: "0.7.0"
+    container_name: ollama
+    ports:
+      - "11434:11434"
+    extra_hosts:
+      - "host.docker.internal:host-gateway"
+    environment:
+      - OLLAMA_NO_GPU=1
+      - OLLAMA_NUM_PARALLEL=1
+      - OLLAMA_CONTEXT_LENGTH=2048
+      - OLLAMA_MAX_LOADED_MODELS=1
+      - OLLAMA_KEEP_ALIVE=0s
+      - OLLAMA_DEBUG=INFO
+    volumes:
+      - /mnt/vlm_data/models/ollama_data:/data:rw
+    restart: unless-stopped
+    command: ["ollama","serve"]

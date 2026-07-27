@@ -1,0 +1,12 @@
+.git
+.cache
+__pycache__
+*.pyc
+*.pyo
+*.tar.gz
+*.bak
+_bak_*
+backup_*
+logs/*
+data/*
+models/*

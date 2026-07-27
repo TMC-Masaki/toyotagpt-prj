@@ -1,0 +1,91 @@
+# ==============================
+# Python
+# ==============================
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+
+# ==============================
+# Runtime / cache
+# ==============================
+.cache/
+logs/
+*.log
+core
+core.*
+*.pid
+
+# ==============================
+# Credentials / runtime env
+# ==============================
+.env
+.env.*
+!.env.example
+
+# ==============================
+# Backups / temporary files
+# ==============================
+_backup/
+_backup_*/
+_bak_*/
+_bak*/
+backup_*/
+*.bak
+*.bak.*
+*.bak_*
+*.broken*
+*.before_*
+*.good_*
+*~
+
+# ==============================
+# Large input / generated media
+# ==============================
+data/*.MOV
+data/*.mov
+data/*.mp4
+data/*.avi
+data/*.mkv
+
+# ==============================
+# ML weights / model cache
+# ==============================
+*.pt
+*.pth
+*.onnx
+*.engine
+*.safetensors
+
+# ==============================
+# Evaluation generated outputs
+# ==============================
+vlm_eval/raw_logs/
+vlm_eval/archive/
+yolo_eval/raw_logs/
+yolo_eval/archive/
+
+# ==============================
+# Misc temporary artifacts
+# ==============================
+.DS_Store
+Thumbs.db
+
+# Local accidental / temporary files
+/0
+/24
+/42
+/=
+/CANCELED
+/ERROR
+/\[internal\]
+/transferring
+
+# Local backups
+/_backup*
+/_bak*
+/backup_*
+*.bak*
+*.probe_*
+*.current

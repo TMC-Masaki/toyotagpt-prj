@@ -1,0 +1,14 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: docker/Dockerfile.dev
+    ports:
+      - "8000:8000"
+    environment:
+      - TZ=Asia/Tokyo
+    volumes:
+      - ./app:/app/app
+      - ./config.yaml:/app/config.yaml
+      - ./logs:/logs
+      - ./data:/data

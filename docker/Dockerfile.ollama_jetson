@@ -1,0 +1,19 @@
+FROM dustynv/ollama:r36.4.0
+
+# curl/tar を入れる
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    ca-certificates curl tar \
+    && rm -rf /var/lib/apt/lists/*
+
+# ★ここを上げる：qwen2.5vl は Ollama 0.7.0+ が必要
+ARG OLLAMA_VERSION=0.7.0
+
+# Ollama の Linux arm64 バイナリを取得して差し替え
+RUN set -eux; \
+    mkdir -p /tmp/ollama && \
+    curl -L -o /tmp/ollama/ollama.tgz \
+      https://github.com/ollama/ollama/releases/download/v${OLLAMA_VERSION}/ollama-linux-arm64.tgz && \
+    tar -xzf /tmp/ollama/ollama.tgz -C /tmp/ollama && \
+    install -m 755 /tmp/ollama/bin/ollama /usr/local/bin/ollama && \
+    rm -rf /tmp/ollama && \
+    ollama --version

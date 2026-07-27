@@ -1,0 +1,235 @@
+mode: online
+input:
+  type: camera
+  path: /data/test5.mp4
+  camera_index: 0
+  start_sec: 0
+  width: 1280
+  height: 720
+  fps: 29.97
+  device: null
+  loop: false
+pipeline:
+  interval_sec: 0.5
+  frame_stride: 1
+vlm:
+  ollama_host: http://ollama:11434
+  engine: hf
+  model_name: Qwen/Qwen2-VL-7B-Instruct
+  prompt: '画像の上半分から明確に視認できるものだけを、次のキーから選べ：
+
+    特にfallen_objectとaccident,はblind_spot見落としたくない
+
+    road_depression,fallen_object,road_work,accident,blind_spot,pedestrian_attention,intersection_complexity
+
+
+    厳守：
+
+    - 不確実なら出力しない
+
+    - 該当なしは none
+
+    - 出力は1行のみ
+
+    - 最大2個
+
+    - キーは完全一致のみ
+
+    - カンマ区切りのみ
+
+    - addCriterion禁止
+
+    - 日本語禁止
+
+    - 空白禁止
+
+    - 説明禁止
+
+    - none と他キーの同時出力禁止
+
+
+    例：
+
+    road_work,traffic_jam
+
+    none'
+  emit_interval_sec: 3.0
+  max_new_tokens: 8
+  infer_width: 224
+speech:
+  enabled: false
+  min_interval_sec: 0.03
+  detail: medium
+logging:
+  dir: /logs
+  jsonl: true
+yolo:
+  enabled: true
+  model_name: yolov8m.pt
+  conf: 0.25
+  iou: 0.45
+  imgsz: 416
+  preview_hz: 2.5
+risk:
+  scene_complexity_weight: 0.45
+  vru_weight: 0.4
+  blindspot_weight: 0.1
+  speed_mismatch_weight: 0.05
+  mid_threshold: 20.0
+  high_threshold: 40.0
+can:
+  mode: dummy
+  interface: can2
+  endian_default: motorola
+  dummy:
+    vehicle_speed: 80.3
+    shift: D
+    accel_x: 0.12
+    accel_y: -0.04
+    accel_z: 9.81
+    pedal_accel: 18.0
+    pedal_brake: 0.0
+    steering_rate: 6.5
+  signals:
+  - can_id: '0x3BF'
+    byte: 1
+    bit: 7
+    length: 1
+    label: B_P
+    name_en: Shift position P signal
+    name_jp: シフトポジションP信号
+    unit: '-'
+    resolution: 1
+    signed: false
+    endian: motorola
+  - can_id: '0x3BF'
+    byte: 1
+    bit: 6
+    length: 1
+    label: B_R
+    name_en: Shift position R signal
+    name_jp: シフトポジションR信号
+    unit: '-'
+    resolution: 1
+    signed: false
+    endian: motorola
+  - can_id: '0x3BF'
+    byte: 1
+    bit: 5
+    length: 1
+    label: B_N
+    name_en: Shift position N signal
+    name_jp: シフトポジションN信号
+    unit: '-'
+    resolution: 1
+    signed: false
+    endian: motorola
+  - can_id: '0x3BF'
+    byte: 1
+    bit: 4
+    length: 1
+    label: B_D
+    name_en: Shift position D signal
+    name_jp: シフトポジションD信号
+    unit: '-'
+    resolution: 1
+    signed: false
+    endian: motorola
+  - can_id: '0x3BF'
+    byte: 2
+    bit: 7
+    length: 1
+    label: B_B
+    name_en: Shift position B signal
+    name_jp: シフトポジションB信号
+    unit: '-'
+    resolution: 1
+    signed: false
+    endian: motorola
+  - can_id: '0x116'
+    byte: 2
+    bit: 7
+    length: 8
+    label: HV_ACCP
+    name_en: Accelerator pedal angle
+    name_jp: アクセル開度
+    unit: '%'
+    resolution: 0.5
+    signed: false
+    endian: motorola
+  - can_id: '0x097'
+    byte: 4
+    bit: 0
+    length: 5
+    label: PTCURSFT
+    name_en: Current Control Shift Range
+    name_jp: 現在シフトレンジ
+    unit: '-'
+    resolution: 1
+    signed: false
+    endian: motorola
+  - can_id: '0x025'
+    byte: 2
+    bit: 7
+    length: 12
+    label: SSA
+    name_en: Steering signal
+    name_jp: 舵角信号
+    unit: deg
+    resolution: 1.5
+    signed: true
+    endian: motorola
+  - can_id: '0x101'
+    byte: 4
+    bit: 7
+    length: 10
+    label: PMC
+    name_en: Pressure of Master Cylinder
+    name_jp: M/C圧
+    unit: MPa
+    resolution: 0.02
+    signed: false
+    endian: motorola
+  - can_id: '0x090'
+    byte: 2
+    bit: 7
+    length: 10
+    label: VSC_GX0
+    name_en: Anteroposterior G sensor level
+    name_jp: 前後Gｾﾝｻ値（補正済み）
+    unit: m/s^2
+    resolution: 0.03589
+    signed: true
+    endian: motorola
+    offset: 0
+  - can_id: '0x0D7'
+    byte: 4
+    bit: 7
+    length: 16
+    label: SP1
+    name_en: Vehicle speed (SP1)
+    name_jp: 車速(SP1)
+    unit: km/h
+    resolution: 0.01
+    signed: false
+    endian: motorola
+    offset: 0
+  backend: script
+  script_cmd: env CAN_BACKEND=ixxat IXXAT_CHANNEL=0 IXXAT_BITRATE=500000 IXXAT_DATA_BITRATE=2000000
+    IXXAT_FD=1 python3 /app/tools/ixxat_can_dump.py
+evaluation:
+  log_enabled: false
+  overlay_enabled: true
+output:
+  save_dir: /logs/events
+  event_save_enabled: true
+upload:
+  enabled: true
+  mode: aws
+  poll_interval_sec: 2.0
+  max_retries: 3
+  retry_backoff_sec: 30
+  s3_bucket: toyotagpt-masaki
+  s3_prefix_base: events
+  dynamodb_table: toyotagpt-eventdb
+  aws_region: ap-northeast-1
